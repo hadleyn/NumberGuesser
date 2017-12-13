@@ -9,7 +9,8 @@ import math
 # You can change these values to change how the game ultimately works.
 upperLimit = 100
 lowerLimit = 1
-guess = 50
+guess = int(math.floor((upperLimit + lowerLimit) / 2))
+totalGuesses = 1
 
 # This is a calculation of how many tries it will take the guesser
 magicGuesses = int(math.ceil(math.log((upperLimit - lowerLimit), 2)))
@@ -21,8 +22,7 @@ print "Think of a number between " + str(lowerLimit) + " and " + str(upperLimit)
 
 response = input("Is your number greater than (1), less than (-1) or equal to (0) " + str(guess) + "?\n")
 
-# Let's count the total guesses. At this point, we've already made one guess.
-totalGuesses = 1
+
 
 while response != 0:
     print "Ok, let me try again!"
