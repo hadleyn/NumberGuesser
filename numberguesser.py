@@ -2,7 +2,6 @@
 # get them ready for us
 # "sys" contains things that help us read user input and print things to the screen
 # "math" contains things to help with advanced mathematical operations (beyond addition, subtraction, division, etc)
-import sys
 import math
 
 # Our program/game has certain parameters or limits that need to be declared before we begin.
