@@ -16,16 +16,16 @@ totalGuesses = 1
 magicGuesses = int(math.ceil(math.log((upperLimit - lowerLimit), 2)))
 
 # The main game can now start!
-print "Magic Number Guesser!"
-print "I will always guess your number in " + str(magicGuesses) + " or fewer tries!\n\n"
-print "Think of a number between " + str(lowerLimit) + " and " + str(upperLimit)
+print ("Magic Number Guesser!")
+print ("I will always guess your number in " + str(magicGuesses) + " or fewer tries!\n\n")
+print ("Think of a number between " + str(lowerLimit) + " and " + str(upperLimit))
 
 response = input("Is your number greater than (1), less than (-1) or equal to (0) " + str(guess) + "?\n")
 
 
 
 while response != 0:
-    print "Ok, let me try again!"
+    print ("Ok, let me try again!")
     totalGuesses = totalGuesses + 1
     if response == 1:
         lowerLimit = guess
@@ -36,5 +36,5 @@ while response != 0:
 
     response = input("Is your number greater than (1), less than (-1) or equal to (0) " + str(guess) + "?\n")
 
-print "Hurrah! Your number was " + str(guess)
-print "It took me " + str(totalGuesses) + " tries"
+print ("Hurrah! Your number was " + str(guess))
+print ("It took me " + str(totalGuesses) + " tries")
