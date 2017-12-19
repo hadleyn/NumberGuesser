@@ -25,13 +25,14 @@ response = input("Is your number greater than (1), less than (-1) or equal to (0
 
 while response != 0:
     print ("Ok, let me try again!")
-    totalGuesses = totalGuesses + 1
     if response == 1:
         lowerLimit = guess
         guess = int(math.floor((upperLimit + guess) / 2))
+        totalGuesses = totalGuesses + 1
     elif response == -1:
         upperLimit = guess
         guess = int(math.floor((lowerLimit + guess) / 2))
+        totalGuesses = totalGuesses + 1
 
     response = input("Is your number greater than (1), less than (-1) or equal to (0) " + str(guess) + "?\n")
 
